@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>My Personal Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="My private hub: notes, links, and projects." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>My Hub</h1>
+      <nav>
+        <a href="./">Home</a>
+        <a href="sets.html">Study Aircraft Types</a>
+      </nav>
+    </div>
+  </header>
+
+    <main class="container">
+      <section class="hero">
+        <h2>Welcome</h2>
+        <p>This is my homepage. I’ll add sections and tools over time.</p>
+        <a class="button" href="sets.html">Go to Sets</a>
+      </section>
+
+      <section class="cards">
+        <article class="card">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="https://github.com/">GitHub</a></li>
+            <li><a href="https://chat.openai.com/">ChatGPT</a></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Notes</h3>
+          <p>Put short notes or a changelog here.</p>
+        </article>
+
+        <article class="card">
+          <h3>Projects</h3>
+          <p>Add project tiles that link to subpages.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Me</small>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
